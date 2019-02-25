@@ -1,0 +1,18 @@
+{
+    "docker-container-name": "",
+    "local-eos-node": "http://127.0.0.1:8888",
+    "eos-wallet-node": "http://127.0.0.1:3000",
+    "local-telos-node": "http://127.0.0.1:8889",
+    "telos-wallet-node": "http://127.0.0.1:3001",
+    "log-dir": "logs/",
+    "cache-dir": "cache/",
+    "config-dir": "config/",
+    "failed-dir": "failed/",
+    "cleos-command": "/eos/build/programs/cleos/cleos",
+    "teclos-command": "/telos/build/programs/teclos/teclos",
+    "docker": "/usr/bin/docker",
+    "telos-wallet-password-file": "config/telos_wallet.pw",
+    "eos-wallet-password-file": "config/eos_wallet.pw",
+    "eos-node-list": "config/eos_node_available.list",
+    "telos-node-list": "config/telos_node_available.list"
+}
