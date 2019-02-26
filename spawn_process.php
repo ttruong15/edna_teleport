@@ -19,7 +19,12 @@ $startBlock = $argv[4];
 $endBlock = $argv[5];
 
 try {
-    $teleport = new Teleport($chainName);
+    $telegram = null;
+    if($enableTelegramBot) {
+        $telegram = new Telegram();
+    }
+
+    $teleport = new Teleport($chainName, $telegram);
     $teleport->setOurNode($useOurOwnNodeOnly);
     $teleport->runProcessBlockRange($startBlock, $endBlock);
 } catch(Exception $e) {
